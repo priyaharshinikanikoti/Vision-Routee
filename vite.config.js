@@ -1,12 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/Vision-Routee/',
   server: {
     port: 3000,
-    host: '0.0.0.0', // Bind to all network interfaces for local and loopback access
+    host: '0.0.0.0',
     strictPort: false
   }
 });
